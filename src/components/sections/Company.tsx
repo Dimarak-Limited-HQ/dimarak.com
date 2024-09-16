@@ -24,7 +24,6 @@ const Services: React.FC = () => {
           height={167}
         />
       </div>
-
       <div className="h-[200px] flex justify-center items-center">
         <div className="flex flex-col justify-center">
           <p className="mb-4">
