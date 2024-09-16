@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.font500 {
+  font-weight: 500;
+}
+
+.font300 {
+  font-weight: 300;
+}
+
+.font800 {
+  font-weight: 800;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.scroll-offset {
+  scroll-margin-top: 100px;
+}
+
+
+
+/* global.css */
+nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Fallback color */
+  backdrop-filter: blur(8px);
+  /* Ensure this is supported */
+  -webkit-backdrop-filter: blur(8px);
+  /* For Safari */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Fallback border */
+} 
