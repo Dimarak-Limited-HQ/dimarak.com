@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../shared/Button";
 
-const Services: React.FC = () => {
+const Company: React.FC = () => {
   return (
     <section className="flex gap-8 mx-24 mt-24">
       <div className="relative w-[50%] h-[50%]">
@@ -41,4 +41,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default Company;
