@@ -11,9 +11,6 @@ const ThemeToggle: React.FC = () => {
         name='Theme'
         role='option'
         aria-label='Theme'
-        aria-expanded='false'
-        
-        
         aria-selected
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className="p-2 rounded-lg border"

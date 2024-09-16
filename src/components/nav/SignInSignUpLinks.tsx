@@ -1,5 +1,4 @@
 'use client';
-import Link from 'next/link';
 import ThemeToggle from './ThemeToggle'; // Assuming you already have a ThemeToggle component
 import Button from '../shared/Button';
 interface SignInSignUpLinksProps {

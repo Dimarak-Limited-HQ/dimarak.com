@@ -1,11 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import ThemeToggle from './ThemeToggle';
 import LogoSection from './LogoSection';
 import NavLinks from './NavLinks';
 import MobileMenuButton from './MobileMenuButton';
 import Drawer from './MobileDrawer';
-import Link from 'next/link';
 import SignInSignUpLinks from './SignInSignUpLinks';
 
 const NavBar: React.FC = () => {
