@@ -1,13 +1,23 @@
-// components/Logo.tsx
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
+
 const Logo: React.FC = () => {
-       return (
-        <div className="logo">
-           <Image src="/svg/logo.svg" alt="logo" width={200} height={200} />
+    const { theme } = useTheme();
+
+    return (
+        <div
+            className={`logo w-250 h-200 ${theme === 'dark' ? 'filter invert' : ''}`}
+        >
+            <Image
+                src="/svg/logo.svg"
+                alt="logo"
+                width={200}
+                height={200}
+            />
         </div>
     );
-
 };
 
 export default Logo;

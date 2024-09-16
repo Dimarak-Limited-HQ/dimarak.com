@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { useRouter ,usePathname} from 'next/navigation';
 
 const navLinks = [
     { label: 'Home', link: '/' },
@@ -14,6 +15,9 @@ interface NavLinksProps {
 }
 
 const NavLinks: React.FC<NavLinksProps> = ({ onClick, isMobile = false }) => {
+    const router = useRouter();
+    const currentPath = usePathname();
+
     return (
         <ul className={`flex ${isMobile ? 'flex-col space-y-8 mt-20' : 'items-center space-x-8'}`}>
             {navLinks.map((navlink, id) => (
@@ -21,7 +25,10 @@ const NavLinks: React.FC<NavLinksProps> = ({ onClick, isMobile = false }) => {
                     <Link href={navlink.link} passHref>
                         <span
                             onClick={onClick}
-                            className="text-link dark:text-white font-medium hover:text-voilet dark:hover:text-voilet cursor-pointer"
+                            className={`font-medium cursor-pointer ${currentPath === navlink.link
+                                    ? 'text-primary dark:text-voilet'
+                                    : 'text-link dark:text-white'
+                                } hover:text-primary dark:hover:text-voilet`}
                         >
                             {navlink.label}
                         </span>
