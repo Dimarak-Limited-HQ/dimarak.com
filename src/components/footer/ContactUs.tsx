@@ -7,15 +7,15 @@ const ContactUs: React.FC = () => {
             <h3 className="text-xl font-bold dark:text-white  mb-4 text-dark">Contact Us</h3>
             <ul className=' text-paragraph'>
                 <li className="flex items-center mb-2">
-                    <span>1234 Business St, Suite 100, City, Country</span>
+                    <span>Suite 100, Accra, Ghana</span>
                 </li>
                 <li className="flex items-center mb-2">
-                    <span>Phone: </span>
-                    <a href="tel:+123456789" className="hover:text-primary" > +123 456 789</a>
+                    <span>{"Phone: "}</span>
+                    <a href="tel:+233 53 074 7527" className="hover:text-primary" >+233 53 074 7527</a>
                 </li>
                 <li className="flex items-center">
-                    <span>Email:</span>
-                    <a href="mailto:info@company.com" className="hover:text-primary"> info@company.com</a>
+                    <span>{"Email: " }</span>
+                    <a href="mailto:info@company.com" className="hover:text-primary"> info@dimarak.com.com</a>
                 </li>
             </ul>
         </div>

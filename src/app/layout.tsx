@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import NavBar from "@/components/nav/NavBar";
 import Footer from "@/components/footer/Footer";
+import Head from "next/head";
 
 const poppins = Nunito({ weight: [ '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body className={`${poppins.className}  dark:bg-dark  dark:text-white`}>
         <ThemeProvider
           attribute="class"

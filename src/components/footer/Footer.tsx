@@ -6,7 +6,7 @@ import NewsletterSignup from './NewsletterSignup';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-white dark:bg-dark text-gray-800 py-12 px-10">
+        <footer className="bg-white dark:bg-dark dark:shadow-lg text-gray-800 py-12 px-10">
             <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 <AboutUs />
                 <ContactUs />
