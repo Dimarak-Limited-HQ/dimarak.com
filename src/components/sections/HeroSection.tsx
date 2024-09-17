@@ -5,9 +5,8 @@ const HeroSection: React.FC = () => {
 
     return (
         <section
-            className="relative h-[85vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-right-center"
+            className="relative h-[90vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-right-center"
         >
-            {/* Dark mode background image */}
             <div
                 className="absolute inset-0 bg-cover bg-no-repeat bg-right-center  bg-[url('/hero-light.png')]  dark:bg-[url('/hero-dark.png')]"
                 aria-hidden="true"
