@@ -4,9 +4,8 @@ import {usePathname} from 'next/navigation';
 
 const navLinks = [
     { label: 'Home', link: '/' },
-    { label: 'About Us', link: '/about' },
+    { label: 'About', link: '/about' },
     { label: 'Services', link: '/services' },
-    { label: 'Contact', link: '/contact' },
 ];
 
 interface NavLinksProps {
@@ -25,8 +24,8 @@ const NavLinks: React.FC<NavLinksProps> = ({ onClick, isMobile = false }) => {
                         <span
                             onClick={onClick}
                             className={`font-medium cursor-pointer ${currentPath === navlink.link
-                                    ? 'text-primary dark:text-voilet'
-                                    : 'text-link dark:text-white'
+                                ? 'text-primary dark:text-white'
+                                    : 'text-body  dark:text-primary'
                                 } hover:text-primary dark:hover:text-voilet`}
                         >
                             {navlink.label}

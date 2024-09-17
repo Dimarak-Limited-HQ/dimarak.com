@@ -1,12 +1,13 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import NavBar from "@/components/nav/NavBar";
+import Footer from "@/components/footer/Footer";
+import Head from "next/head";
 
-
-const poppins = Inter({ weight: ["100", '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
+const poppins = Nunito({ weight: [ '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Dimarak | Software Solutions',
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body className={`${poppins.className}  dark:bg-dark  dark:text-white`}>
         <ThemeProvider
           attribute="class"
@@ -29,8 +31,10 @@ export default function RootLayout({
         >
           <NavBar />
           <main className="pt-[30px]"> 
+
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
