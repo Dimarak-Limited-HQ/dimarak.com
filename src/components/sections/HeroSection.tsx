@@ -1,7 +1,8 @@
-import React from 'react';
-import Button from '../shared/Button';
+import React from "react";
+import Button from "../shared/Button";
 
 const HeroSection: React.FC = () => {
+
     return (
         <section
             className="relative h-[85vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-right-center"
@@ -37,6 +38,7 @@ const HeroSection: React.FC = () => {
             </div>
         </section>
     );
+
 };
 
 export default HeroSection;

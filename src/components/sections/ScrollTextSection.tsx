@@ -1,8 +1,9 @@
-"use client"
-import React from 'react';
-import { FaIndustry, FaRocket, FaLaptopCode } from 'react-icons/fa';
+"use client";
+import React from "react";
+import { FaIndustry, FaRocket, FaLaptopCode } from "react-icons/fa";
 
 const ScrollingTextSection: React.FC = () => {
+
     return (
         <section className="relative  py-2">
             <div className="container mx-auto text-center">
@@ -31,28 +32,31 @@ const ScrollingTextSection: React.FC = () => {
                     </div>
                 </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <style jsx>{`
-                .scrolling-text {
-                    display: inline-block;
-                    white-space: nowrap;
-                }
+      <style jsx>{`
+        .scrolling-text {
+          display: inline-block;
+          white-space: nowrap;
+        }
 
-                @keyframes scroll {
-                    0% {
-                        transform: translateX(100%);
-                    }
-                    100% {
-                        transform: translateX(-100%);
-                    }
-                }
+        @keyframes scroll {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
 
-                .animate-scroll {
-                    animation: scroll 15s linear infinite;
-                }
-            `}</style>
-        </section>
-    );
+        .animate-scroll {
+          animation: scroll 15s linear infinite;
+        }
+      `}</style>
+    </section>
+  );
 };
 
 export default ScrollingTextSection;
