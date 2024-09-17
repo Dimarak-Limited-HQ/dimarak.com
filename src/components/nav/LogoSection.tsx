@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import Logo from '../shared/logo';
+import Logo from '../shared/Logo';
 
 const LogoSection: React.FC = () => {
     return (

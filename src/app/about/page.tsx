@@ -2,6 +2,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import Company from '@/components/sections/Company';
 
 const About: React.FC = () => {
     const router = useRouter();
@@ -22,20 +23,20 @@ const About: React.FC = () => {
             description: 'Jane is a tech visionary, having led the development of groundbreaking tech solutions for various industries. She is passionate about using technology to solve real-world problems.',
             id: 2,
         },
-        // {
-        //     name: 'Sarfo Kusi',
-        //     position: 'CTO & Co-Founder',
-        //     imageSrc: '/richmond.jpg',
-        //     description: 'Jane is a tech visionary, having led the development of groundbreaking tech solutions for various industries. She is passionate about using technology to solve real-world problems.',
-        //     id: 3,
-        // },
-        // {
-        //     name: 'Emmmanuel Sedem',
-        //     position: 'CTO & Co-Founder',
-        //     imageSrc: '/richmond.jpg',
-        //     description: 'Jane is a tech visionary, having led the development of groundbreaking tech solutions for various industries. She is passionate about using technology to solve real-world problems.',
-        //     id: 3,
-        // },
+        {
+            name: 'Sarfo Kusi',
+            position: 'CTO & Co-Founder',
+            imageSrc: '/richmond.jpg',
+            description: 'Jane is a tech visionary, having led the development of groundbreaking tech solutions for various industries. She is passionate about using technology to solve real-world problems.',
+            id: 3,
+        },
+        {
+            name: 'Emmmanuel Sedem',
+            position: 'Lead Graphic Designer',
+            imageSrc: '/sedem.jpg',
+            description: 'Jane is a tech visionary, having led the development of groundbreaking tech solutions for various industries. She is passionate about using technology to solve real-world problems.',
+            id: 3,
+        },
     ];
 
     const navigateToDetails = (id: number) => {
@@ -45,14 +46,10 @@ const About: React.FC = () => {
     return (
         <section className=" dark:bg-dark py-16 px-6">
             <div className="max-w-7xl mx-auto text-center">
-                <h1 className="text-5xl font-extrabold mt-20 text-gray-800 dark:text-white mb-8">
+                <h1 className="text-5xl font-extrabold mt-20 text-gray-800 dark:text-white ">
                     About Us
                 </h1>
-                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
-                    We are dedicated to empowering local businesses by delivering innovative solutions tailored to their unique needs. Our team of experienced professionals ensures your business thrives in today's competitive market.
-                </p>
             </div>
-
             {/* Mission, Vision, Values without Images */}
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 {/* Mission */}
