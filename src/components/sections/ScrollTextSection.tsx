@@ -4,7 +4,7 @@ import { FaIndustry, FaRocket, FaLaptopCode } from 'react-icons/fa';
 
 const ScrollingTextSection: React.FC = () => {
     return (
-        <section className="relative  py-10">
+        <section className="relative  py-2">
             <div className="container mx-auto text-center">
                 <div className="overflow-hidden relative">
                     <div className="scrolling-text whitespace-nowrap">

@@ -1,6 +1,6 @@
 // components/SocialIcons.tsx
 import React from 'react';
-import { RiTwitterXLine, RiGithubLine, RiLinkedinLine, RiMailLine } from "react-icons/ri";
+import { RiTwitterXLine, RiGithubLine, RiLinkedinLine, RiMailLine, RiFacebookBoxLine, RiFacebookBoxFill } from "react-icons/ri";
 
 const SocialIcons: React.FC = () => {
     return (
@@ -15,7 +15,7 @@ const SocialIcons: React.FC = () => {
                 <RiTwitterXLine size={24} />
             </a>
             <a href="mailto:dimaraklimited@gmail.com" aria-label="Email" className="hover:text-blue-500 transform transition-transform duration-300 hover:scale-110">
-                <RiMailLine size={24} />
+                <RiFacebookBoxFill size={24} />
             </a>
         </div>
     );

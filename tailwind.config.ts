@@ -14,8 +14,15 @@ const config: Config = {
         body: "#212121",
         voilet: "#0000EE",
         link: "#172b4d",
-        dark: "#212121"
+        dark: "#12192B",
+        accent:"#FFB74D",
+        paragraph: "#6B7280",
 
+
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/particle.png')",
+        "hero-image": "url('/Dimarhero.png')",
       },
     },
   },
