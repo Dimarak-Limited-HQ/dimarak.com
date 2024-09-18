@@ -44,17 +44,16 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
 
-  // Update the visibleCount based on screen size
   useEffect(() => {
     const updateVisibleCount = () => {
       if (window.innerWidth < 768) {
-        setVisibleCount(1); // Show 1 testimonial on small screens
+        setVisibleCount(1);
       } else {
-        setVisibleCount(3); // Show 3 testimonials on larger screens
+        setVisibleCount(3);
       }
     };
 
-    updateVisibleCount(); // Set initial value
+    updateVisibleCount();
     window.addEventListener('resize', updateVisibleCount);
 
     return () => window.removeEventListener('resize', updateVisibleCount);
