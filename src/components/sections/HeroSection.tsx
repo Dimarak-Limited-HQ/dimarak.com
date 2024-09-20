@@ -8,29 +8,24 @@ const HeroSection: React.FC = () => {
         className="absolute inset-0 bg-cover bg-no-repeat bg-right-center  bg-[url('/hero-light.png')]  dark:bg-[url('/hero-dark.png')]"
         aria-hidden="true"
       />
-      <div className="absolute left-0 h-[90vh] w-full dark:bg-black dark:bg-opacity-70">
-        <div className="relative dark:text-white ml-5 pt-10 z-10 text-left text-white max-w-2xl">
-          <div className="px-4 max-w-[230px] my-5 py-2 rounded-[10px] bg-[#FFB74D]">
-            Your Success, Our Priority
-          </div>
-          <h1 className="text-4xl dark:text-white md:text-5xl font-bold mb-2 text-body">
-            Transforming Local{" "}
+      <div className="absolute left-0 h-[90vh] w-full">
+        <div className="h-[90vh] text-4xl bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2 text-body">
+          <div className="flex flex-col justify-center items-center h-[90vh]">
+            <div>Transforming Local</div>
             <span className="bg-gradient-three-color bg-clip-text text-transparent">
               Businesses Through
             </span>
-          </h1>
-          <h1 className="text-4xl dark:text-white md:text-5xl font-bold mb-2 text-body">
-            Innovation
-          </h1>
-          <p className="text-lg dark:text-white mt-9 md:text-xl mb-6 text-body">
-            We specialize in modern solutions for local enterprises.
-          </p>
-
-          <div className="flex mt-10 space-x-4">
-            <Button href="/contact" bg>
-              Contact Us
-            </Button>
-            <Button href="/services">Our Services</Button>
+            <div>Innovation</div>
+            <div className="text-[16px] dark:text-white font-bold mt-6 text-body">
+              {" "}
+              We specialize in modern solutions for local enterprises.
+            </div>
+            <div className="flex text-[16px] mt-10 space-x-4">
+              <Button href="/contact" bg>
+                Contact Us
+              </Button>
+              <Button href="/services">Our Services</Button>
+            </div>
           </div>
         </div>
       </div>
