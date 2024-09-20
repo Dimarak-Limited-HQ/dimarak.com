@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
         aria-hidden="true"
       />
       <div className="absolute left-0 h-[90vh] w-full dark:bg-black dark:bg-opacity-70">
-        <div className="relative dark:text-white ml-5 z-10 text-left text-white max-w-2xl">
+        <div className="relative dark:text-white ml-5 pt-10 z-10 text-left text-white max-w-2xl">
           <div className="px-4 max-w-[230px] my-5 py-2 rounded-[10px] bg-[#FFB74D]">
             Your Success, Our Priority
           </div>
