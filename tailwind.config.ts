@@ -24,7 +24,7 @@ const config: Config = {
         "hero-pattern": "url('/particle.png')",
         "hero-image": "url('/Dimarhero.png')",
         "gradient-three-color":
-          "linear-gradient(to right, #82CAFF 20%, #92C7C7 50%, #50C878 70%, #D4FF8F 100%)",
+          "linear-gradient(to right, #82CAFF 5%, #92C7C7 40%, #50C878 70%, #D4FF8F 100%)",
       },
     },
   },
