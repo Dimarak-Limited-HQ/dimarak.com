@@ -1,16 +1,14 @@
-import Image from 'next/image';
-import Button from '../shared/Button';
+import Image from "next/image";
+import Button from "../shared/Button";
 
 const WhyChooseUs = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div className="md:w-1/2 w-full px-6 md:px-12 text-left">
-        <h2 className="text-sm font-bold mb-4 text-green-500 dark:text-green-400">
-          WHY CHOOSE US
-        </h2>
+        <h2 className="text-sm font-bold mb-4 text-[#6CC417]">WHY CHOOSE US</h2>
         <h3 className="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
           Crafting&nbsp;
-          <span className="bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-gray-400 via-blue-500 to-green-500 dark:from-gray-100 dark:via-blue-300 dark:to-green-300">
+          <span className="font-extrabold bg-gradient-three-color bg-clip-text text-transparent">
             Digital Experiences
           </span>
           <br /> That Matter
@@ -51,7 +49,7 @@ const WhyChooseUs = () => {
             className="rounded-lg"
           />
           <div className="absolute inset-0 flex flex-col items-start justify-center bg-black bg-opacity-50 text-white p-3 sm:p-4 rounded-lg text-left pl-6 sm:pl-8 lg:pl-16">
-            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 dark:text-green-500">
+            <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#6CC417]">
               Cyber Security
             </h4>
             <p className="text-lg sm:text-xl lg:text-2xl mt-2 font-semibold">
