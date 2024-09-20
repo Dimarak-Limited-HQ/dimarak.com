@@ -1,5 +1,7 @@
 'use client';
 
+import Button from '../shared/Button';
+
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -77,7 +79,7 @@ export default function Testimonials() {
   };
 
   return (
-    <div className="bg-[#C8D4DF] dark:bg-gray-900 pt-12 pb-24 relative">
+    <div className="bg-[#C8D4DF] dark:bg-dark pt-12 pb-24 relative">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 md:mb-36">
           <div className="w-full md:w-1/2 text-center md:text-left md:ml-10">
@@ -98,9 +100,9 @@ export default function Testimonials() {
           </div>
 
           <div className="w-full md:w-1/2 text-center md:text-right mt-6 md:mt-0 md:mr-10">
-            <button className="bg-blue-500 dark:bg-blue-700 text-white py-3 px-4 text-sm rounded-2xl shadow-md hover:bg-blue-600 dark:hover:bg-blue-800">
+            <Button href="/visit-review" bg={true}>
               View Review
-            </button>
+            </Button>
           </div>
         </div>
 
