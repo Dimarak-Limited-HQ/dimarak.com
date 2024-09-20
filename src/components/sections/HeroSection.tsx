@@ -5,11 +5,11 @@ const HeroSection: React.FC = () => {
   return (
     <section className="relative h-[90vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-right-center">
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-right-center  bg-[url('/hero-light.png')]  dark:bg-[url('/hero-dark.png')]"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-right-center bg-[url('/hero-dark.png')]"
         aria-hidden="true"
       />
       <div className="absolute left-0 h-[90vh] w-full">
-        <div className="h-[90vh] text-4xl bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2 text-body">
+        <div className="h-[90vh] text-4xl bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2 text-body">
           <div className="flex flex-col justify-center items-center h-[90vh]">
             <div>Transforming Local</div>
             <span className="bg-gradient-three-color bg-clip-text text-transparent">

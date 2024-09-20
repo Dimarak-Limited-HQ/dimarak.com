@@ -35,14 +35,13 @@ const data = [
 ];
 
 const About: React.FC = () => {
-  const numberOfBoxes = 5;
   return (
     <section className="mx-24 mt-24">
       <p className="text-2xl font-bold mb-14">
         Why Choosen <span className="text-[#FFB74D]">DIMARAK</span>?
       </p>
 
-      <div className="bg-[#1A73e8] rounded-3xl flex gap-4 p-4  z-10">
+      <div className="bg-primary rounded-3xl flex gap-4 p-4  z-10">
         {data.map((item, index) => (
           <div
             key={index}
