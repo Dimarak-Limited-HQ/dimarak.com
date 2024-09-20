@@ -9,14 +9,14 @@ const HeroSection: React.FC = () => {
         aria-hidden="true"
       />
       <div className="absolute left-0 h-[90vh] w-full">
-        <div className="h-[90vh] text-4xl bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2 text-body">
+        <div className="h-[90vh] text-4xl bg-white text-white bg-opacity-0 dark:bg-black dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2">
           <div className="flex flex-col justify-center items-center h-[90vh]">
             <div>Transforming Local</div>
             <span className="bg-gradient-three-color bg-clip-text text-transparent">
               Businesses Through
             </span>
             <div>Innovation</div>
-            <div className="text-[16px] dark:text-white font-bold mt-6 text-body">
+            <div className="text-[16px] dark:text-white font-bold mt-6 text-white">
               {" "}
               We specialize in modern solutions for local enterprises.
             </div>
