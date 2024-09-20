@@ -58,8 +58,8 @@ const WhyChooseUs = () => {
               Streamlining Processes <br /> for Business Efficiency
             </p>
             <p className="mt-4 mb-6 text-sm sm:text-sm lg:text-base">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam id
-              repellat porro nobis quas atque quo earum sit sequi quasi?
+              Our advanced cybersecurity solutions help businesses safeguard
+              critical data while optimizing operational workflows.
             </p>
 
             <Button href="/discover-more" bg={true}>
