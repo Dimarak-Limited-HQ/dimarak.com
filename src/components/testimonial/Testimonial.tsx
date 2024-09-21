@@ -83,15 +83,8 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 md:mb-36">
           <div className="w-full md:w-1/2 text-center md:text-left md:ml-10">
-            <div className="text-base font-extrabold text-gray-700 dark:text-gray-200">
-              4.5/5.0
-              <span className="text-yellow-400 mx-1 relative bottom-1 space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="inline" />
-                ))}
-              </span>
-              <span className="text-yellow-400 text-lg mr-1">5</span>
-              (Based on 3265 ratings)
+            <div className="text-xl sm:text-3xl lg:text-3xl font-bold text-[#6CC417]">
+              What Our Customers Are Saying
             </div>
             <p className="text-gray-700 dark:text-gray-300 mt-2 text-sm">
               Hear from our customers using our product and services about how
