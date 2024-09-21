@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "../shared/Button";
+import React from 'react';
+import Button from '../shared/Button';
 
 const HeroSection: React.FC = () => {
   return (
@@ -16,8 +16,7 @@ const HeroSection: React.FC = () => {
               Businesses Through
             </span>
             <div>Innovation</div>
-            <div className="text-[16px] dark:text-white font-bold mt-6 text-white">
-              {" "}
+            <div className="text-[1.1rem] dark:text-white font-bold mt-6 text-white text-center sm:text-left">
               We specialize in modern solutions for local enterprises.
             </div>
             <div className="flex text-[16px] mt-10 space-x-4">
