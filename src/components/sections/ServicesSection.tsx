@@ -9,9 +9,9 @@ const services = [
     imageSrc: '/web.png', // Replace with actual image paths
   },
   {
-    title: 'Digital Marketing',
+    title: 'Electronics',
     description:
-      'Boost your online presence with targeted marketing strategies tailored to your audience.',
+      'We develop and build efficient electronic product protoypes',
     imageSrc: '/electronics.png',
   },
   {

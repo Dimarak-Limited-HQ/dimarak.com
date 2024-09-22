@@ -5,7 +5,7 @@ const ContactUs: React.FC = () => {
     return (
         <div>
             <h3 className="text-xl font-bold dark:text-white  mb-4 text-dark">Contact Us</h3>
-            <ul className=' text-paragraph'>
+            <ul className='dark:text-gray-300 text-paragraph'>
                 <li className="flex items-center mb-2">
                     <span>Suite 100, Accra, Ghana</span>
                 </li>

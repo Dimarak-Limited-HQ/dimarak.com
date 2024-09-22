@@ -3,15 +3,15 @@ import Button from '../shared/Button';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative h-[90vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-right-center">
+    <section className="relative h-[90vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-center">
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-right-center bg-[url('/hero-dark.png')]"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-right-center"
         aria-hidden="true"
       />
       <div className="absolute left-0 h-[90vh] w-full">
-        <div className="h-[90vh] text-4xl bg-white text-white bg-opacity-0 dark:bg-black dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2">
+        <div className="h-[90vh] text-4xl bg-white text-dark dark:text-dark bg-opacity-0 dark:bg-dark dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2">
           <div className="flex flex-col justify-center items-center h-[90vh]">
-            <div>Transforming Local</div>
+            <div className=''>Transforming Local</div>
             <span className="bg-gradient-three-color bg-clip-text text-transparent">
               Businesses Through
             </span>
