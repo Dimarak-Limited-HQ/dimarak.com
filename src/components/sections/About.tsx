@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import RotatedBox from "@/components/sections/RotatedBar";
 
 const data = [
   {
@@ -36,31 +35,23 @@ const data = [
 ];
 
 const About: React.FC = () => {
-  const numberOfBoxes = 5;
   return (
     <section className="mx-24 mt-24">
       <p className="text-2xl font-bold mb-14">
         Why Choosen <span className="text-[#FFB74D]">DIMARAK</span>?
       </p>
 
-      <div className="relative">
-        <div className="flex gap-40 justify-center items-center">
-          {Array.from({ length: numberOfBoxes }, (_, index) => (
-            <RotatedBox key={index} />
-          ))}
-        </div>
-        <div className="bg-[#1A73e8] rounded-3xl flex gap-4 p-4  z-10">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-start justify-center gap-4"
-            >
-              <Image src={item.image} alt={item.title} width={50} height={50} />
-              <p className="text-white font-bold">{item.title}</p>
-              <p className="text-white text-sm">{item.description}</p>
-            </div>
-          ))}
-        </div>
+      <div className="bg-primary rounded-3xl flex gap-4 p-4  z-10">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-start justify-center gap-4"
+          >
+            <Image src={item.image} alt={item.title} width={50} height={50} />
+            <p className="text-white font-bold">{item.title}</p>
+            <p className="text-white text-sm">{item.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

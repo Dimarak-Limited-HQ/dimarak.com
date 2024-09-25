@@ -5,7 +5,7 @@ const NewsletterSignup: React.FC = () => {
     return (
         <div>
             <h3 className="text-xl font-bold mb-4 dark:text-white  text-dark">Newsletter Signup</h3>
-            <p className="mb-4  text-paragraph">Subscribe to our newsletter to receive the latest updates and offers.</p>
+            <p className="mb-4 dark:text-gray-300  text-paragraph">Subscribe to our newsletter to receive the latest updates and offers.</p>
             <form>
                 <input
                     type="email"
