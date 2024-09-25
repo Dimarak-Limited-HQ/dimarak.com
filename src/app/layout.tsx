@@ -4,7 +4,7 @@ import { Nunito} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import NavBar from "@/components/nav/NavBar";
-import Footer from "@/components/footer/footer";
+import Footer from "@/components/footer/Footer";
 
 
 const poppins = Nunito({ weight: [ '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
