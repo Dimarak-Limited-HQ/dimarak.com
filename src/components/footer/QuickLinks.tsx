@@ -4,7 +4,7 @@ const QuickLinks: React.FC = () => {
     return (
         <div>
             <h3 className="text-xl font-bold mb-4 dark:text-white text-dark">Quick Links</h3>
-            <ul className=' text-paragraph'>
+            <ul className='dark:text-gray-300 text-paragraph'>
                 <li className="mb-2">
                     <a href="/" className="hover:text-primary">Home</a>
                 </li>

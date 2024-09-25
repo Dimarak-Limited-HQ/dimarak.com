@@ -5,7 +5,7 @@ import NavLinks from './NavLinks';
 import MobileMenuButton from './MobileMenuButton';
 import Drawer from './MobileDrawer';
 import SignInSignUpLinks from './SignInSignUpLinks';
-import ProductDropdown from './ProductDropdown';
+
 
 const NavBar: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);

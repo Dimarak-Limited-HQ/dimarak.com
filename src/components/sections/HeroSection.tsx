@@ -1,43 +1,35 @@
-import React from "react";
-import Button from "../shared/Button";
+import React from 'react';
+import Button from '../shared/Button';
 
 const HeroSection: React.FC = () => {
-
-    return (
-        <section
-            className="relative h-[90vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-right-center"
-        >
-            <div
-                className="absolute inset-0 bg-cover bg-no-repeat bg-right-center  bg-[url('/hero-light.png')]  dark:bg-[url('/hero-dark.png')]"
-                aria-hidden="true"
-            />
-
-            <div className="relative dark:text-white ml-5 z-10 text-left text-white max-w-2xl">
-                <div className="px-4 max-w-[230px] my-5 py-2 rounded-[10px] bg-[#FFB74D]">
-                    Your Success, Our Priority
-                </div>
-                <h1 className="text-4xl dark:text-white md:text-5xl font-bold mb-2 text-body">
-                    Transforming Local Businesses Through
-                </h1>
-                <h2 className="text-2xl md:text-4xl text-primary font-semibold mb-4">
-                    Innovation
-                </h2>
-                <p className="text-lg dark:text-white mt-9 md:text-xl mb-6 text-body">
-                    We specialize in modern solutions for local enterprises.
-                </p>
-
-                <div className="flex mt-10 space-x-4">
-                    <Button href="/contact" bg>
-                        Contact Us
-                    </Button>
-                    <Button href="/services">
-                        Our Services
-                    </Button>
-                </div>
+  return (
+    <section className="relative h-[90vh] flex items-center mt-[40px] bg-hero-pattern px-6 bg-contain bg-no-repeat bg-center">
+      <div
+        className="absolute inset-0 bg-cover bg-no-repeat bg-right-center"
+        aria-hidden="true"
+      />
+      <div className="absolute left-0 h-[90vh] w-full">
+        <div className="h-[90vh] text-4xl bg-white text-dark dark:text-dark bg-opacity-0 dark:bg-dark dark:bg-opacity-70 dark:text-white md:text-5xl font-bold mb-2">
+          <div className="flex flex-col justify-center items-center h-[90vh]">
+            <div className=''>Transforming Local</div>
+            <span className="bg-gradient-three-color bg-clip-text text-transparent">
+              Businesses Through
+            </span>
+            <div>Innovation</div>
+            <div className="text-[1.1rem] dark:text-white font-bold mt-6 text-white text-center sm:text-left">
+              We specialize in modern solutions for local enterprises.
             </div>
-        </section>
-    );
-
+            <div className="flex text-[16px] mt-10 space-x-4">
+              <Button href="/contact" bg>
+                Contact Us
+              </Button>
+              <Button href="/services">Our Services</Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default HeroSection;
