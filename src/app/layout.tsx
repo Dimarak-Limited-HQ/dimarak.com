@@ -7,6 +7,7 @@ import NavBar from "@/components/nav/NavBar";
 import Footer from "@/components/footer/Footer";
 
 
+
 const poppins = Nunito({ weight: [ '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
