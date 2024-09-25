@@ -18,6 +18,7 @@ We design and develop robust, user-friendly applications that solve real-world p
 - **Open-Source Contributions**: We believe in community-driven innovation and actively contribute to open-source projects.
 
 ### 2. Electronics
+
 Our electronics division is at the forefront of developing advanced electronic products and systems. We offer:
 
 - **Embedded Systems and IoT Devices**: Tailored solutions for automation, control systems, and smart devices.
@@ -26,6 +27,7 @@ Our electronics division is at the forefront of developing advanced electronic p
 - **Consumer Electronics**: High-quality gadgets that combine design and function for everyday use.
 
 ### 3. Art and Creativity
+
 At Dimarak, we embrace the artistic side of innovation. Our creative services include:
 
 - **Digital Art**: Custom digital illustrations and designs that reflect your brand’s identity.
