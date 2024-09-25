@@ -1,6 +1,6 @@
 // components/SocialIcons.tsx
 import React from 'react';
-import { RiTwitterXLine, RiGithubLine, RiLinkedinLine, RiMailLine, RiFacebookBoxLine, RiFacebookBoxFill } from "react-icons/ri";
+import { RiTwitterXLine, RiGithubLine, RiLinkedinLine, RiFacebookBoxFill } from "react-icons/ri";
 
 const SocialIcons: React.FC = () => {
     return (

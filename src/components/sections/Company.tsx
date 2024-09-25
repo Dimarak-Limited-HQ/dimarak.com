@@ -11,7 +11,7 @@ const Company: React.FC = () => {
             <span className="text-[#FFB74D]">DIMARAK</span> Company Limited is a
             forward-thinking technology company committed to transforming local
             businesses into modern, competitive enterprises through innovative
-            solutions. We are dedicated to empowering local businesses by delivering innovative solutions tailored to their unique needs.Our team of experienced professionals ensures your business thrives in today's competitive market.
+            solutions. We are dedicated to empowering local businesses by delivering innovative solutions tailored to their unique needs.Our team of experienced professionals ensures your business thrives in competitive market.
 
           </p>
           <Button href="/#" bg={false}>
