@@ -4,7 +4,7 @@ import { Nunito} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import NavBar from "@/components/nav/NavBar";
-import Footer from "@/components/footer/Footer";
+// import Footer from "@/components/footer/Footer";
 
 
 
@@ -35,7 +35,7 @@ export default function RootLayout({
 
             {children}
           </main>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
