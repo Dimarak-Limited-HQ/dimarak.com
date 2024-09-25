@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+
 import SocialIcons from '../shared/Socials';
 import Logo from '../shared/Logo';
 

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { FaQuoteLeft, FaQuoteRight, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import {  FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const testimonials = [
     {
