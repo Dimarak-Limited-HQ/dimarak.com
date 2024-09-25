@@ -2,7 +2,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import Company from '@/components/sections/Company';
+
 
 const About: React.FC = () => {
     const router = useRouter();
