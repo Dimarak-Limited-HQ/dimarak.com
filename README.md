@@ -7,6 +7,7 @@ At Dimarak, we strive to blend artistry and technology, creating exceptional exp
 
 ## What We Offer
 
+
 ### 1. Software Solutions
 We design and develop robust, user-friendly applications that solve real-world problems. Our software services include:
 
