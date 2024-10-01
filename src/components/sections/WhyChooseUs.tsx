@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Button from '../shared/Button';
@@ -15,11 +15,28 @@ const fadeInRight = {
 
 const WhyChooseUs = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <section className="relative flex flex-col md:flex-row items-center justify-between py-12 bg-gradient-to-r from-blue-900 via-purple-800 to-pink-600 bg-no-repeat bg-center">
+      {/* Artistic Background Overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Abstract SVG or Pattern */}
+        <svg
+          className="absolute left-0 top-0 w-full h-full opacity-20"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 800 600"
+        >
+          <g fill="none" stroke="white" strokeWidth="0.5">
+            <path d="M0 300 Q200 500 400 300 Q600 100 800 300" />
+            <path d="M0 100 Q200 300 400 100 Q600 -100 800 100" />
+          </g>
+        </svg>
+
+        {/* Gradient Overlay for Artistic Look */}
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-purple-900 opacity-80"></div>
+      </div>
 
       {/* Left Text Section with fadeInLeft animation */}
       <motion.div
-        className="md:w-1/2 w-full px-6 md:px-12 text-left"
+        className="md:w-1/2 w-full px-6 md:px-12 text-left relative z-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -59,7 +76,7 @@ const WhyChooseUs = () => {
 
       {/* Right Image Section with fadeInRight animation */}
       <motion.div
-        className="lg:w-1/2 w-full relative px-4 sm:px-6 lg:px-12 mt-8 sm:mt-12 lg:mt-0"
+        className="lg:w-1/2 w-full relative px-4 sm:px-6 lg:px-12 mt-8 sm:mt-12 lg:mt-0 z-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

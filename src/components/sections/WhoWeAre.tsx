@@ -1,18 +1,45 @@
-'use client';
+"use client"; // Add this line to the top of your file
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../shared/Button";
 
 export default function WhoWeAre() {
+  // Animation variants for floating images
+  const floatAnimation = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: [-5, 5, -5],
+      transition: {
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <motion.section
-      className="flex flex-col md:flex-row items-center justify-between px-6 py-12 bg-white dark:bg-dark transition-colors duration-300"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
-    >
+    <section className="relative flex flex-col md:flex-row items-center justify-between px-6 py-12 bg-gradient-to-r from-blue-900 via-purple-800 to-pink-600 bg-no-repeat bg-center">
+      {/* Artistic Background Overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Abstract SVG or Pattern */}
+        <svg
+          className="absolute left-0 top-0 w-full h-full opacity-20"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 800 600"
+        >
+          <g fill="none" stroke="white" strokeWidth="0.5">
+            <path d="M0 300 Q200 500 400 300 Q600 100 800 300" />
+            <path d="M0 100 Q200 300 400 100 Q600 -100 800 100" />
+          </g>
+        </svg>
+
+        {/* Gradient Overlay for Artistic Look */}
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-purple-900 opacity-80"></div>
+      </div>
+
       <motion.div
-        className="w-full md:w-1/2 relative h-auto"
+        className="relative z-10 w-full md:w-1/2 h-auto"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -41,10 +68,28 @@ export default function WhoWeAre() {
             )}
           </ul>
         </motion.div>
+
+        {/* Adding floating decorative images */}
+        <motion.img
+          src="/art1.png"
+          alt="Art Decoration 1"
+          className="absolute top-[-20px] left-[-30px] w-12 h-12"
+          variants={floatAnimation}
+          initial="hidden"
+          animate="visible"
+        />
+        <motion.img
+          src="/art2.png"
+          alt="Art Decoration 2"
+          className="absolute bottom-[-40px] right-[-30px] w-16 h-16"
+          variants={floatAnimation}
+          initial="hidden"
+          animate="visible"
+        />
       </motion.div>
 
       <motion.div
-        className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8"
+        className="relative z-10 w-full md:w-1/2 mt-8 md:mt-0 md:ml-8"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -107,6 +152,6 @@ export default function WhoWeAre() {
           Discover More
         </Button>
       </motion.div>
-    </motion.section>
+    </section>
   );
 }

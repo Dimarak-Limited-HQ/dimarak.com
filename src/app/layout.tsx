@@ -32,7 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NavBar />
-          <main className="pt-[30px]"> 
+          <main className=""> 
 
             {children}
           </main>

@@ -60,7 +60,7 @@ const ServicesSection: React.FC = () => {
   return (
     <section className="p-16 px-6 bg-gray-50 dark:bg-dark" ref={ref}>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
-      
+
         <div className="flex-1 md:mr-8">
           <h2 className="text-lg font-bold mb-4 pt-3 text-[#6CC417]">SERVICES</h2>
           {services.map((service, index) => (
@@ -74,7 +74,7 @@ const ServicesSection: React.FC = () => {
                 {service.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                {service.description } {/* Show description only if hovered */}
+                {service.description} {/* Show description only if hovered */}
               </p>
             </motion.div>
           ))}
