@@ -1,10 +1,22 @@
+'use client';
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "../shared/Button";
 
 export default function WhoWeAre() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-6 py-12 bg-whitedark:bg-dark transition-colors duration-300">
-      <div className="w-full md:w-1/2 relative h-auto">
+    <motion.section
+      className="flex flex-col md:flex-row items-center justify-between px-6 py-12 bg-white dark:bg-dark transition-colors duration-300"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+    >
+      <motion.div
+        className="w-full md:w-1/2 relative h-auto"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <Image
           src="/chooseUs.jpg"
           alt="Why Choose Us"
@@ -12,36 +24,31 @@ export default function WhoWeAre() {
           width={500}
           height={500}
         />
-        <div className="absolute left-0 bottom-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-[50%] hidden md:block">
+        <motion.div
+          className="absolute left-0 bottom-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-[50%] hidden md:block"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+        >
           <ul className="space-y-2">
-            <li className="flex items-center space-x-2">
-              <span>Custom Solutions</span>
-            </li>
-            <hr className="border-gray-400 dark:border-gray-600" />
-            <li className="flex items-center space-x-2">
-              <span>Cutting-Edge Design</span>
-            </li>
-            <hr className="border-gray-400 dark:border-gray-600" />
-            <li className="flex items-center space-x-2">
-              <span>SEO Optimization</span>
-            </li>
-            <hr className="border-gray-400 dark:border-gray-600" />
-            <li className="flex items-center space-x-2">
-              <span>Responsive Design</span>
-            </li>
-            <hr className="border-gray-400 dark:border-gray-600" />
-            <li className="flex items-center space-x-2">
-              <span>Innovative Technology</span>
-            </li>
-            <hr className="border-gray-400 dark:border-gray-600" />
-            <li className="flex items-center space-x-2">
-              <span>Security and Reliability</span>
-            </li>
+            {["Custom Solutions", "Cutting-Edge Design", "SEO Optimization", "Responsive Design", "Innovative Technology", "Security and Reliability"].map(
+              (item, index) => (
+                <li key={index} className="flex items-center space-x-2">
+                  <span>{item}</span>
+                  <hr className="border-gray-400 dark:border-gray-600" />
+                </li>
+              )
+            )}
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8">
+      <motion.div
+        className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <h2 className="text-sm font-bold mb-4 text-[#6CC417]">WHO WE ARE</h2>
 
         <h3 className="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-300">
@@ -60,21 +67,36 @@ export default function WhoWeAre() {
 
         <div className="flex space-x-8 mb-6">
           <div className="text-center">
-            <h4 className="text-3xl font-bold text-gray-900 dark:text-white">
+            <motion.h4
+              className="text-3xl font-bold text-gray-900 dark:text-white"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
               100+
-            </h4>
+            </motion.h4>
             <p className="text-gray-600 dark:text-gray-400">Projects Done</p>
           </div>
           <div className="text-center">
-            <h4 className="text-3xl font-bold text-gray-900 dark:text-white">
+            <motion.h4
+              className="text-3xl font-bold text-gray-900 dark:text-white"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+            >
               50+
-            </h4>
+            </motion.h4>
             <p className="text-gray-600 dark:text-gray-400">Happy Clients</p>
           </div>
           <div className="text-center">
-            <h4 className="text-3xl font-bold text-gray-900 dark:text-white">
+            <motion.h4
+              className="text-3xl font-bold text-gray-900 dark:text-white"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
               4.8
-            </h4>
+            </motion.h4>
             <p className="text-gray-600 dark:text-gray-400">Client Reviews</p>
           </div>
         </div>
@@ -84,7 +106,7 @@ export default function WhoWeAre() {
         <Button href="/discover-more" bg={true}>
           Discover More
         </Button>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }

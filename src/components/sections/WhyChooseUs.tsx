@@ -1,10 +1,30 @@
+'use client'
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import Button from '../shared/Button';
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
 
 const WhyChooseUs = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between py-12 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-      <div className="md:w-1/2 w-full px-6 md:px-12 text-left">
+
+      {/* Left Text Section with fadeInLeft animation */}
+      <motion.div
+        className="md:w-1/2 w-full px-6 md:px-12 text-left"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInLeft}
+      >
         <h2 className="text-sm font-bold mb-4 text-[#6CC417]">WHY CHOOSE US</h2>
         <h3 className="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
           Crafting&nbsp;
@@ -14,9 +34,7 @@ const WhyChooseUs = () => {
           <br /> That Matter
         </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-8">
-          Building robust, high-performing websites with cutting-edge
-          technology, delivering seamless functionality and exceptional user
-          experiences.
+          Building robust, high-performing websites with cutting-edge technology, delivering seamless functionality and exceptional user experiences.
         </p>
 
         <ul className="space-y-6 text-gray-800 dark:text-gray-100">
@@ -37,9 +55,16 @@ const WhyChooseUs = () => {
             <hr className="border-gray-300 dark:border-gray-700 my-2" />
           </li>
         </ul>
-      </div>
+      </motion.div>
 
-      <div className="lg:w-1/2 w-full relative px-4 sm:px-6 lg:px-12 mt-8 sm:mt-12 lg:mt-0">
+      {/* Right Image Section with fadeInRight animation */}
+      <motion.div
+        className="lg:w-1/2 w-full relative px-4 sm:px-6 lg:px-12 mt-8 sm:mt-12 lg:mt-0"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInRight}
+      >
         <div className="relative h-[300px] sm:h-[400px] w-full">
           <Image
             src="/whyChooseUs.jpg"
@@ -56,8 +81,7 @@ const WhyChooseUs = () => {
               Streamlining Processes <br /> for Business Efficiency
             </p>
             <p className="mt-4 mb-6 text-sm sm:text-sm lg:text-base">
-              Our advanced cybersecurity solutions help businesses safeguard
-              critical data while optimizing operational workflows.
+              Our advanced cybersecurity solutions help businesses safeguard critical data while optimizing operational workflows.
             </p>
 
             <Button href="/discover-more" bg={true}>
@@ -65,7 +89,7 @@ const WhyChooseUs = () => {
             </Button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
