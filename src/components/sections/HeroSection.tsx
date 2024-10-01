@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-5xl font-extrabold text-accent"
+          className="text-5xl bg-gradient-three-color bg-clip-text text-transparent font-extrabold"
         >
           Through Innovation
         </motion.h2>
