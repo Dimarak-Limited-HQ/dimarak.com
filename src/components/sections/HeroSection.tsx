@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative h-[90vh] flex items-center px-10 bg-no-repeat bg-center">
+    <section className="relative h-[90vh] bg-hero-pattern flex items-center px-10 bg-no-repeat bg-center">
       {/* Artistic SVG or Illustrations */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Switch artwork based on theme */}
@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
         {/* Additional abstract shapes or blobs */}
         <motion.img
           src="/whyChooseUs.jpg"
-          className="absolute right-20 bottom-0 w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full "
+          className="absolute hidden md:block   right-20 bottom-0 w-96 h-96 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full "
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Content Section with Animations */}
-      <div className="relative z-10 w-full md:w-1/2 space-y-6">
+      <div className="relative z-10  w-full md:w-1/2 space-y-6">
         <motion.h1
           variants={fadeInUp}
           initial="hidden"
@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-5xl font-extrabold leading-tight bg-gradient-three-color bg-clip-text text-transparent"
+          className="text-5xl font-extrabold text-accent"
         >
           Through Innovation
         </motion.h2>
@@ -104,8 +104,9 @@ const HeroSection: React.FC = () => {
             <Button href="/services">Our Services</Button>
           </motion.div>
         </div>
+        
       </div>
-
+     
       {/* Image Grid with Bubble Animation */}
       <div className="relative hidden md:block md:w-1/2">
         <div className="relative flex justify-center items-center">
